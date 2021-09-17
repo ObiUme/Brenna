@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [photos, setPhotos] = useState([]);
 
   useEffect(() => {
-    fetch("/hello")
+    fetch("/photos")
       .then((r) => r.json())
-      .then((data) => setCount(data.count));
+      .then(setPhotos)
   }, []);
 
   return (
