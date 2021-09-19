@@ -4,15 +4,17 @@ import Button from '@mui/material/Button'
 import Container from '@mui/material/Container'
 import AddAPhotoIcon from '@mui/icons-material/AddAPhoto';
 import  { makeStyles }  from '@mui/styles';
+import Box from '@mui/material/Box'
 
 
 const useStyles = makeStyles({
-    btn: {
+    root: {
         fontSize: '20px',
         backgroundColor: 'black',
         '&:hover': {
             backgroundColor: 'black'
-        }
+        },
+        align: 'center'
     },
     title: {
         textDecoration: 'underline'
@@ -35,17 +37,18 @@ function PhotoHome(){
             >
                 Welcome to the Brenna's Photography...
             </Typography>
-            <Button 
-            className={classes.btn}
-            color='secondary' 
-            variant='contained' 
-            align='center' 
-            style={{marginLeft: '50vh'}} 
-            startIcon={<AddAPhotoIcon/>}
-            endIcon={<AddAPhotoIcon/>}
-            >
+            <Box textAlign='center'>
+                <Button 
+                color='secondary' 
+                variant='contained' 
+                align='center' 
+                startIcon={<AddAPhotoIcon/>}
+                endIcon={<AddAPhotoIcon/>}
+                
+                >
                 Click Here to Continue
             </Button>
+            </Box>
             </Container>
             </>
     )
