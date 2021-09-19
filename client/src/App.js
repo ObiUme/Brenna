@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import PhotoHome  from "./components/PhotoHome";
+import PhotoContainer from './components/PhotoContainer';
 
 function App() {
   const [photos, setPhotos] = useState([]);
@@ -11,7 +13,8 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Page Count: {count}</h1>
+      <PhotoHome/>
+      <PhotoContainer photos={photos}/>
     </div>
   );
 }

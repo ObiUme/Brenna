@@ -1,12 +1,12 @@
-import PhotoCard from './components/PhotoCard';
+import PhotoCard from '../components/PhotoCard';
 
 
-function PhotoContainer() {
+function PhotoContainer({ photos }) {
 
-    // let photoarray = photos.map((photoObj) => )
+    let photoarray = photos.map((photoObj) => <PhotoCard key={photoObj.id} photos={photoObj}/> )
     return (
         <div>
-
+            {photoarray}
         </div>
 
     )
