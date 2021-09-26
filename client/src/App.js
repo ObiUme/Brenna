@@ -23,7 +23,7 @@ function App() {
       .then(setPhotos)
   }, []);
 
-  console.log(photos)
+  // console.log(photos)
   return (
     <ThemeProvider theme={Theme}>
     

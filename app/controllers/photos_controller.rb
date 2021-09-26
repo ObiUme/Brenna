@@ -7,7 +7,7 @@ end
 
 def show
     photo = Photo.find(params[:id])
-    render json: photo, 
+    render json: photo
 end
 
 def update
@@ -26,7 +26,7 @@ end
 private
 
 def photo_params 
-    params.permit(:title, :image :user_id)
+    params.permit(:title, :image, :category, :user_id)
 end 
 
 
