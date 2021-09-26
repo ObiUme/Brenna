@@ -15,5 +15,3 @@ Photo.create(title: 'blaidd_and_anunu', image:"https://lh3.googleusercontent.com
 Photo.create(title: 'blaidd', image:"https://lh3.googleusercontent.com/REcu9X6-BLirPh3On-4yykDldAp7XuYjb7YvnAeH_yLYes0KwBRFSO9l9BB8YJZTZYOK81rheXdRF20xJFCswMArQChVPnZls4AtJN5D3EgXaoGRrp6D-9nUsNppMD_nU4Rtn8xie68=w600-h315-p-k", category: 'pet', user_id: obi1.id)
 Photo.create(title: 'brenna', image:"https://lh3.googleusercontent.com/lYkbGI-kNaVIqIe-7hK71BmLAeiG4atThYoQl7jyd15GXW7cA5TbSW4vBTZPI_70KsPbRQKjoHuXMU23Fj_OF9a0KwyQXO9-96dfVkJTBPDlv50xXzmIaplChJO3-BfOz6_Iam6yPnA=w600-h315-p-k", category: 'personal', user_id:  obi1.id)
 Photo.create(title: 'jeanie', image:"https://lh3.googleusercontent.com/4A4PYjcRLQr9OexJkbMLw9w3OFXWBuur-3u0vRxl29BXgP0kLbctvj6O0oomdEoXN7yDxY3Bt0jiSf9BLkwtIqqDDzANV6JYX6zXX6POqXLaLWJ10PCl_X2-tTq-Cn2qEfyxC6B0Tl0=w600-h315-p-k", category: 'bodybuilding', user_id: obi1.id)
-
-puts 'done seeding'

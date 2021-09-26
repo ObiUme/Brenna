@@ -1,16 +1,13 @@
 class PhotosController < ApplicationController
+    skip_before_action :authorize, only: :index
 
 def index 
     render json: Photo.all
 end
 
 def show
-    photo = Photo.find_by(id: params[:id])
-    if photo
-        render json: photo
-    else
-        render json: { error: "Photo Not Found" }, status: :not_found
-    end
+    photo = Photo.find(params[:id])
+    render json: photo, 
 end
 
 def update
@@ -19,10 +16,17 @@ def update
 end
 
 
+def create
+    user = User.find_by(id: session[:user_id])
+    photo = user.photos.create!(photo_params)  
+    render json: photo, status: :created
+end
+
+
 private
 
 def photo_params 
-    params.permit(:title, :image)
+    params.permit(:title, :image :user_id)
 end 
 
 
